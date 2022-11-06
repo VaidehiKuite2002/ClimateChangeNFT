@@ -1,0 +1,27 @@
+https://www.linkpicture.com/q/2_301.png
+https://www.linkpicture.com/q/10_160.png
+https://www.linkpicture.com/q/5_317.png
+https://www.linkpicture.com/q/7_214.png
+https://www.linkpicture.com/q/9_150.png
+https://www.linkpicture.com/q/8_100.png
+https://www.linkpicture.com/q/11_146.png
+https://www.linkpicture.com/q/4_129.png
+https://www.linkpicture.com/q/6_259.png
+https://www.linkpicture.com/q/1_599.png
+
+const API = async function() {
+  const options = [
+    {Carbon_Emission : '0-2 %', impact : "Neutral" , image: "https://www.linkpicture.com/q/2_301.png"},
+    {Carbon_Emission: '3-5%',  impact : "Neutral" , image: "https://www.linkpicture.com/q/10_160.png"},
+    {Carbon_Emission: '6-8%', impact : "Be aware " , image: "https://www.linkpicture.com/q/5_317.png"},
+    {Carbon_Emission: '9-11%', impact : "Entering in Danger stage" , image: "https://www.linkpicture.com/q/7_214.png"},
+    {Carbon_Emission: '12-14%', impact : "Entering in Danger stage" , image: "https://www.linkpicture.com/q/9_150.png"},
+    {Carbon_Emission: '15-17%', impact : "Danger" , image: "https://www.linkpicture.com/q/8_100.png"},
+    {Carbon_Emission: '18-20%', impact : "Danger" , image: "https://www.linkpicture.com/q/11_146.png"},
+    {Carbon_Emission: '21-23%', impact : "Very Danger" , image: "https://www.linkpicture.com/q/4_129.png"},
+    {Carbon_Emission: '24-26%', impact : "Time to slow the carbon emission" , image: "https://www.linkpicture.com/q/6_259.png"},
+    {Carbon_Emission: '27-29%', impact : "Time to slow the carbon emission" , image: "https://www.linkpicture.com/q/1_599.png"},
+  ]
+  const randomIndex =  Math.floor(Math.random() * 10)
+  return options[randomIndex];
+}
